@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="ChuckNorrisJokeApp.MainPage">
+
+    <StackLayout>
+        <AbsoluteLayout >
+            <ActivityIndicator x:Name="JokeActivator"  HorizontalOptions="Center" VerticalOptions="Center" InputTransparent="True" IsVisible="True"/>
+
+        </AbsoluteLayout>
+        
+        <!-- Place new controls here -->
+        <Image Source="untitled" MinimumWidthRequest="200"/>
+
+
+        <Label Text="Welcome" FontSize="21"
+        HorizontalOptions="Center"
+           
+               />
+
+        <Label x:Name="JokeLabel" HeightRequest="500" BackgroundColor="Yellow" TextColor="Green" Text="Jokes" VerticalTextAlignment="Center" FontSize="Large"/>
+
+        <Button x:Name= "JokeButton" Text= "Get Random Joke" Clicked="JokeButton_Clicked" FontAttributes="Bold" BackgroundColor="Red" TextColor="Black"/>
+        <Button x:Name="CatergoryButton" Text="Catergory" Clicked="CatergoryButton_Clicked" TextColor="Black"/>
+
+
+
+        
+    </StackLayout>
+
+</ContentPage>
